@@ -23,12 +23,12 @@ class DatabaseSeeder extends Seeder
 
         $kategorien = [
             ['id' => 0, 'name' => 'Verein', 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 1, 'name' => 'Spieler','created_at' => now(), 'updated_at' => now()],
-            ['id' => 2, 'name' => 'Trainer','created_at' => now(), 'updated_at' => now()],
-            ['id' => 3, 'name' => 'Offizielle','created_at' => now(), 'updated_at' => now()],
-            ['id' => 4, 'name' => 'Stadion','created_at' => now(), 'updated_at' => now()],
-            ['id' => 5, 'name' => 'Spiele','created_at' => now(), 'updated_at' => now()],
-            ['id' => 6, 'name' => 'Andere Sparten','created_at' => now(), 'updated_at' => now()],
+            ['id' => 1, 'name' => 'Spieler', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 2, 'name' => 'Trainer', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 3, 'name' => 'Offizielle', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 4, 'name' => 'Stadion', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 5, 'name' => 'Spiele', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 6, 'name' => 'Andere Sparten', 'created_at' => now(), 'updated_at' => now()],
         ];
 
         Kategorie::insert($kategorien);

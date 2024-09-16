@@ -13,7 +13,7 @@ class KategorieFactory extends Factory
     public function definition()
     {
         return [
-            'name'       => $this->faker->name(),
+            'name' => $this->faker->name(),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ];

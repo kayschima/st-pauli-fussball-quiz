@@ -3,9 +3,11 @@
 namespace Database\Seeders;
 
 use App\Models\Kategorie;
+use App\Models\Schwierigkeit;
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class DatabaseSeeder extends Seeder
 {
@@ -21,16 +23,26 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@spfq.test',
         ]);
 
-        $kategorien = [
-            ['id' => 0, 'name' => 'Verein', 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 1, 'name' => 'Spieler', 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 2, 'name' => 'Trainer', 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 3, 'name' => 'Offizielle', 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 4, 'name' => 'Stadion', 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 5, 'name' => 'Spiele', 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 6, 'name' => 'Andere Sparten', 'created_at' => now(), 'updated_at' => now()],
-        ];
+        Kategorie::insert(
+            [
+                ['id' => 1, 'name' => 'Verein', 'created_at' => now(), 'updated_at' => now()],
+                ['id' => 2, 'name' => 'Spieler', 'created_at' => now(), 'updated_at' => now()],
+                ['id' => 3, 'name' => 'Trainer', 'created_at' => now(), 'updated_at' => now()],
+                ['id' => 4, 'name' => 'Offizielle', 'created_at' => now(), 'updated_at' => now()],
+                ['id' => 5, 'name' => 'Stadion', 'created_at' => now(), 'updated_at' => now()],
+                ['id' => 6, 'name' => 'Spiele', 'created_at' => now(), 'updated_at' => now()],
+                ['id' => 7, 'name' => 'Andere Sparten', 'created_at' => now(), 'updated_at' => now()],
+            ]
+        );
 
-        Kategorie::insert($kategorien);
+        Schwierigkeit::insert(
+            [
+                ['id' => 1, 'name' => 'einfach', 'created_at' => now(), 'updated_at' => now()],
+                ['id' => 2, 'name' => 'mittel', 'created_at' => now(), 'updated_at' => now()],
+                ['id' => 3, 'name' => 'schwer', 'created_at' => now(), 'updated_at' => now()],
+                ['id' => 4, 'name' => 'Experte', 'created_at' => now(), 'updated_at' => now()],
+                ['id' => 5, 'name' => 'Meister', 'created_at' => now(), 'updated_at' => now()],
+            ]
+        );
     }
 }

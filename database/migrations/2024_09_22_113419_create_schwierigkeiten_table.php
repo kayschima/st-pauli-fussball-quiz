@@ -6,17 +6,17 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    public function up()
+    public function up(): void
     {
-        Schema::create('kategorien', function (Blueprint $table) {
+        Schema::create('schwierigkeiten', function (Blueprint $table) {
             $table->tinyIncrements('id');
             $table->string('name');
             $table->timestamps();
         });
     }
 
-    public function down()
+    public function down(): void
     {
-        Schema::dropIfExists('kategorien');
+        Schema::dropIfExists('schwierigkeiten');
     }
 };
